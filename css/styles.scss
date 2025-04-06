@@ -1,0 +1,193 @@
+// Variables
+$primary-color: #f4a024;
+$light-bg: #fff;
+$dark-bg: #1e1e1e;
+$light-text: #000;
+$dark-text: #fff;
+$btn-bg-light: #ccc;
+$btn-bg-dark: #444;
+
+// Base Styles
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $light-bg;
+  color: $light-text;
+  margin: 0;
+  padding: 0;
+}
+
+.theme-toggle {
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: $light-text;
+  color: $light-bg;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent;
+
+  .logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 500;
+    }
+  }
+}
+
+.download-cv {
+  background-color: $primary-color;
+  padding: 10px 20px;
+  color: $light-bg;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+
+  .intro {
+    max-width: 50%;
+
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      img {
+        width: 32px;
+        height: 32px;
+        transition: filter 0.3s ease;
+        filter: invert(0); // default light theme
+      }
+    }
+
+    .intro-text {
+      h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #666;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin: 10px 0;
+      }
+
+      .highlight {
+        font-weight: bold;
+      }
+
+      p {
+        max-width: 90%;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+
+      .btn {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: $btn-bg-light;
+        color: $light-text;
+        border-radius: 5px;
+
+        &.hire {
+          background-color: $primary-color;
+          color: $light-bg;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .hero-image {
+    position: relative;
+    max-width: 40%;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .badge {
+      position: absolute;
+      background: $light-bg;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      font-size: 0.9rem;
+      font-weight: bold;
+
+      &.experience {
+        top: 10%;
+        left: -20%;
+      }
+
+      &.clients {
+        bottom: 10%;
+        left: -10%;
+      }
+    }
+  }
+}
+
+// ==========================
+// 🌙 Dark Theme Overrides
+// ==========================
+body.dark-theme {
+  background-color: $dark-bg;
+  color: $dark-text;
+
+  .theme-toggle {
+    background-color: $light-bg;
+    color: $light-text;
+  }
+
+  .download-cv,
+  .btn.hire {
+    background-color: $primary-color;
+    color: $dark-text;
+  }
+
+  .btn {
+    background-color: $btn-bg-dark;
+    color: $dark-text;
+  }
+
+  .badge {
+    background-color: #333;
+    color: $dark-text;
+    border: 1px solid #555;
+  }
+
+ 
+}

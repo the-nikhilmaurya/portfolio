@@ -1,0 +1,162 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+body.dark-theme .theme-toggle {
+  background-color: #fff;
+  color: #000;
+}
+body.dark-theme .download-cv,
+body.dark-theme .btn.hire {
+  background-color: #f4a024;
+  color: #fff;
+}
+body.dark-theme .btn {
+  background-color: #444;
+  color: #fff;
+}
+body.dark-theme .badge {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.theme-toggle {
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent;
+}
+.navbar .logo {
+  font-family: "Brush Script MT", cursive;
+  font-size: 2rem;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navbar .nav-links a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+
+.download-cv {
+  background-color: #f4a024;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+.hero .intro {
+  max-width: 50%;
+}
+.hero .intro .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.hero .intro .social-links img {
+  width: 24px;
+  height: 24px;
+}
+.hero .intro .social-links img {
+  width: 32px;
+  height: 32px;
+  transition: filter 0.3s ease;
+  filter: invert(0);
+}
+.hero .intro .social-links img.dark-theme {
+  filter: invert(1) brightness(1.5);
+}
+.hero .intro .intro-text h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #666;
+}
+.hero .intro .intro-text h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+.hero .intro .intro-text .highlight {
+  font-weight: bold;
+}
+.hero .intro .intro-text p {
+  max-width: 90%;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.hero .intro .buttons {
+  display: flex;
+  gap: 20px;
+}
+.hero .intro .buttons .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: #000;
+  border-radius: 5px;
+}
+.hero .intro .buttons .btn.hire {
+  background-color: #f4a024;
+  color: #fff;
+  font-weight: bold;
+}
+.hero .hero-image {
+  position: relative;
+  max-width: 40%;
+}
+.hero .hero-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.hero .hero-image .badge {
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+.hero .hero-image .badge.experience {
+  top: 10%;
+  left: -20%;
+}
+.hero .hero-image .badge.clients {
+  bottom: 10%;
+  left: -10%;
+}
+
+/*# sourceMappingURL=styles.css.map */

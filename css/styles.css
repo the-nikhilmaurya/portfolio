@@ -5,28 +5,6 @@ body {
   margin: 0;
   padding: 0;
 }
-body.dark-theme {
-  background-color: #1e1e1e;
-  color: #fff;
-}
-body.dark-theme .theme-toggle {
-  background-color: #fff;
-  color: #000;
-}
-body.dark-theme .download-cv,
-body.dark-theme .btn.hire {
-  background-color: #f4a024;
-  color: #fff;
-}
-body.dark-theme .btn {
-  background-color: #444;
-  color: #fff;
-}
-body.dark-theme .badge {
-  background-color: #333;
-  color: #fff;
-  border: 1px solid #555;
-}
 
 .theme-toggle {
   top: 20px;
@@ -88,17 +66,10 @@ body.dark-theme .badge {
   margin-bottom: 20px;
 }
 .hero .intro .social-links img {
-  width: 24px;
-  height: 24px;
-}
-.hero .intro .social-links img {
   width: 32px;
   height: 32px;
   transition: filter 0.3s ease;
   filter: invert(0);
-}
-.hero .intro .social-links img.dark-theme {
-  filter: invert(1) brightness(1.5);
 }
 .hero .intro .intro-text h2 {
   margin: 0;
@@ -157,6 +128,29 @@ body.dark-theme .badge {
 .hero .hero-image .badge.clients {
   bottom: 10%;
   left: -10%;
+}
+
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+body.dark-theme .theme-toggle {
+  background-color: #fff;
+  color: #000;
+}
+body.dark-theme .download-cv,
+body.dark-theme .btn.hire {
+  background-color: #f4a024;
+  color: #fff;
+}
+body.dark-theme .btn {
+  background-color: #444;
+  color: #fff;
+}
+body.dark-theme .badge {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
 }
 
 /*# sourceMappingURL=styles.css.map */
